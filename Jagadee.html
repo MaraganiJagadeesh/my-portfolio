@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            scroll-behavior: smooth;
+	    
+        }
+        nav {
+            position: fixed;
+            width: 100%;
+            background: #333;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            display: inline-block;
+        }
+        nav a:hover {
+            background: #555;
+        }
+        section {
+            padding: 50px;
+	     display:none;
+            min-height: 100vh;
+	    justify-content: center;
+            text-align: center;
+	    align-items: center;
+            background: #ddd;
+	   
+		
+	    
+        }.active {
+    display: block;  
+}
+        .sub-section {
+            margin-top: 20px;
+            padding: 15px;
+            background: #eee;
+            border-radius: 8px;
+        }
+        section img {
+            width: 800;
+            height: auto;
+            margin-top: 10px;
+            border-radius: 10px;
+        }
+    </style>
+	<script>
+    document.querySelectorAll("nav a").forEach(link => {
+        link.addEventListener("click", function(event) {
+            event.preventDefault();
+            let targetSection = document.querySelector(this.getAttribute("href"));
+            window.scrollTo({
+                top: targetSection.offsetTop,
+                behavior: "smooth"
+            });
+        });
+    });
+</script>
+
+</head>
+<body>
+
+    <nav>
+        <a href="#about">About Me</a>
+        <a href="#career">Career Objective</a>
+        <a href="#education">Education</a>
+        <a href="#certifications">Certifications</a>
+        <a href="#internships">Internships</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Technical Skills</a>
+	<a href="#sskills">Soft Skills</a>
+        <a href="#competitions">Competitions</a>
+        <a href="#achievements">Achievements</a>
+    </nav>
+    
+    <section id="about">
+        <h2>About Me</h2>
+	<div class="sub-section">
+	  <img src="E:\Web\Images\mvnjimg.jpeg" alt="Image" width="300" height="250">
+	</div>
+
+        <div class="sub-section">
+            <h3>Name</h3>
+            <p>Maragani Venkata Naga Jagadeesh</p>
+        </div>
+        <div class="sub-section">
+            <h3>Living Place</h3>
+            <p>Vadali, Eluru District, Andhra Pradesh, 521325</p>
+        </div>
+	<div class="sub-section">
+            <h3>Contact Number</h3>
+            <p>+91 9912854388</p>
+        </div>
+	<div class="sub-section">
+            <h3>Email</h3>
+            <a href="mailto:mvnjagadeesh2@gmail.com">mvnjagadeesh2@gmail.com</a>
+
+        </div>
+	<div class="sub-section">
+            <h3>Linkedin</h3>
+            <a href="https://www.linkedin.com/in/jagadeesh-maragani-0840a3257?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">Visit Website</a>
+        </div>
+
+    </section>
+
+    <section id="career">
+        <h2>Career Objective</h2>
+        <div class="sub-section">
+            <p>As a Computer Science student, I aim to leverage my technical skills in networking ,while continuously learning new technologies in a dynamic work environment. I seek an opportunity to contribute to the company’s growth by applying my knowledge and problem-solving abilities to real-world challenges. My goal is to develop expertise in network infrastructure while adding value to the organization.</p>
+        </div>
+    </section>
+       
+
+    <section id="education">
+        <h2>Education</h2>
+        <div class="sub-section">
+            <h3>Undergraduate(B.Tech)</h3>
+            <p><b>College Name:</b>Velagapudi Ramakrishna Siddhartha Engineering College</p>
+	    <p><b>Specialisation:</b>Computer Science and Engineering</p>
+	    <p><b>Year:</b>2022-2026</p>
+	    <p><b>CGPA:</b>8.61/10</p>
+        </div>
+        <div class="sub-section">
+            <h3>PUC</h3>
+            <p><b>College Name:</b>Narayana Junior College</p>
+	    <p><b>Specialisation:</b>MPC</p>
+	    <p><b>Passed out year:</b>2022</p>
+	    <p><b>Percentage:</b>98.6/100</p>
+
+        </div>
+	 <div class="sub-section">
+            <h3>SSC</h3>
+            <p><b>School Name:</b>Little Flower E.M High School</p>
+	    <p><b>Passed out year:</b>2020</p>
+	    <p><b>Percentage:</b>96.3/100</p>
+
+        </div>
+
+    </section>
+
+    <section id="certifications">
+        <h2>Certifications</h2>
+        <div class="sub-section">
+            <h3>The Complete Networking Fundamentals Course.Your CCNA Start</h3>
+            
+		<img src="E:\Web\Images\udemy.jpg" alt="Image" width="800" height="500">
+
+	</div>
+        <div class="sub-section">
+            <h3>Network Security Fundamentals</h3>
+            <img src="E:\Web\Images\palo.jpg" alt="Image" width="800" height="500">
+
+        </div>
+        <div class="sub-section">
+            <h3>CCNAv7:Introduction to Networks</h3>
+            <img src="E:\Web\Images\intro_net.jpg" alt="Image" width="800" height="500">
+
+        </div>
+	 <div class="sub-section">
+            <h3>Linux Essentials</h3>
+            <img src="E:\Web\Images\linu.jpg" alt="Image" width="800" height="500">
+
+        </div>
+        <div class="sub-section">
+            <h3>Cybersecurity Essentials</h3>
+            <img src="E:\Web\Images\cyber.jpg" alt="Image" width="800" height="500">
+
+        </div>
+
+
+    </section>
+
+    <section id="internships">
+        <h2>Internships</h2>
+        <div class="sub-section">
+            <h3>AI-ML Virtual Internship</h3>
+            <img src="E:\Web\Images\aiml.jpg" alt="Image" width="450" height="400">
+
+        </div>
+
+        <div class="sub-section">
+            <h3>Network Security Associate Virtual Internship</h3>
+            <img src="E:\Web\Images\ns.jpg" alt="Image" width="450" height="400">
+
+        </div>
+
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="sub-section">
+            <h3>Real-Time DDoS Protection Using P4-Enabled Switches and Centralised SDN Control</h3>
+            <p><b>Timeline:</b>Jan 2025 - Present</p>
+	    <p>Currently working on the implementation of real-time packet filtering using P4-enabled switches and SDN control to enhance DDoS
+ mitigation,achieving improved latency reduction and network efficiency.</p>
+        </div>
+        <div class="sub-section">
+            <h3>Automatic Fire Detection and Suppression system</h3>
+            <p><b>Timeline:</b>Aug - Nov 2024</p>
+	    <p>Developed an IoT-based fire detection and suppression system using an IR sensor and solenoid valve for
+ automated response without manual intervention as a part of Engineering Project In Community Service(EPICS).</p>
+        </div>
+
+    </section>
+
+    <section id="skills">
+        <h2>Technical Skills</h2>
+        <div class="sub-section">
+            <h3>Programming</h3>
+            <p>C, Java, Python</p>
+        </div>
+        <div class="sub-section">
+            <h3>Technologies</h3>
+            <p>Computer Networks, Database Management Systems, Mobile Application Development</p>
+        </div>
+	<div class="sub-section">
+            <h3>Tools</h3>
+            <p>Android Studio, Wireshark</p>
+        </div>
+	<div class="sub-section">
+            <h3>Labs</h3>
+            <p>Cisco Packet Tracer,Eve-NG</p>
+        </div>
+	<div class="sub-section">
+            <h3>Key Skills</h3>
+            <p>Networking(Switching, Routing)</p>
+        </div>
+
+
+    </section>
+ <section id="sskills">
+        <h2>Soft Skills</h2>
+        <div class="sub-section">
+	
+            <p>Collaboration and teamwork</p>
+	    <p>Strong interpersonal and communication skills</p>
+	    <p>Problem solving ability</p>
+	    <p>Fluency in English</p>
+            <p>Leadership skills</p>
+        </div>
+</section>
+
+
+    <section id="competitions">
+        <h2>Competitions</h2>
+               <div class="sub-section">
+            <h3>Uipath Hackathon</h3>
+            <img src="E:\Web\Images\uipath.jpg" alt="Image" width="550" height="400">
+
+        </div>
+
+    </section>
+
+    <section id="achievements">
+        <h2>Achievements</h2>
+        <div class="sub-section">
+            <h3>Scholarships</h3>
+            <p><b>Reliance UG Scholarship</b></p>
+		<p> Selected for the prestigious Reliance Scholarship by qualifying a competitive test assessing verbal ability,
+ analytical and logical ability, and numerical ability.</p>
+	
+
+
+        </div>
+
+    </section>
+<script>
+    document.querySelectorAll("nav a").forEach(link => {
+        link.addEventListener("click", function(event) {
+            event.preventDefault();
+
+            let targetSection = document.querySelector(this.getAttribute("href"));
+            
+            // Hide all sections
+            document.querySelectorAll("section").forEach(sec => {
+                sec.classList.remove("active");
+            });
+
+            // Show only the clicked section
+            targetSection.classList.add("active");
+        });
+    });
+
+    // Show the first section by default
+    document.addEventListener("DOMContentLoaded", function() {
+        document.querySelector("section").classList.add("active");
+    });
+</script>
+
+</body>
+</html>
